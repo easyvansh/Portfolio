@@ -20,7 +20,7 @@ const RecentProjects = () => {
               className="lg:min-h-[30rem] h-[28rem] flex items-center justify-center sm:w-96 w-auto"
             >
               <CardContainer className="inter-var">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] w-auto h-auto rounded-xl p-8 border" >
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1] sm:w-[32rem] h-auto rounded-xl p-10 border" >
                   <CardItem as="h1" translateZ="50" className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                     
                       {project.title}
