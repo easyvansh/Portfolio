@@ -13,16 +13,16 @@ const RecentProjects = () => {
           A small selection of{" "}
           <span className="text-purple">recent projects</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-x-32 gap-y-20 mt-10">
+        <div className="flex flex-wrap items-center justify-center p-4 gap-x-40 gap-y-24 mt-10 ">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+              className="lg:min-h-[30rem] h-[28rem] flex items-center justify-center sm:w-96 w-auto"
             >
-              <CardContainer className="inter-var ">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1]  flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10" >
+              <CardContainer className="inter-var">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] w-auto h-auto rounded-xl p-8 border" >
                   <CardItem as="h1" translateZ="50" className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                
+                    
                       {project.title}
                    
                   </CardItem>
