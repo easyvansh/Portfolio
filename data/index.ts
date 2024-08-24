@@ -9,12 +9,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    title: "Always up for a good tech adventure!",
+    description:"I thrive on transforming bold ideas into sleek solutions and am always ready for the next coding adventure. ",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/me.jpg",
     spareImg: "",
   },
   {
