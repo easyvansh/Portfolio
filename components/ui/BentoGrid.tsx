@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-import Lottie from 'react-lottie';
+import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["Python", "NextJS", "GraphQL"];
+  const rightLists = ["Python", "NodeJS", "C++"];
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
@@ -112,7 +112,7 @@ export const BentoGridItem = ({
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-semibold px-4 pointer-events-none text-2xl text-center md:text-3xl lg:text-4xl"></div>
           </BackgroundGradientAnimation>
         )}
 
@@ -125,39 +125,43 @@ export const BentoGridItem = ({
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div
+            className={`font-light md:max-w-40 md:text-xs lg:text-base text-sm text-slate-300 z-10 py-2 ${
+              id === 2  ? "text-3xl md:max-w-96": id === 3  ? "text-3xl md:max-w-96":  id === 4 ? "text-3xl md:max-w-96" : "" 
+            }`}
+          >
             {description}
           </div>
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
+          <div className={` text-lg lg:text-3xl max-w-96 font-bold z-10 ${
+              id === 2 ? "lg:text-2xl pb-10 z-100" : id === 6 ? " text-white font-bold  text-2xl text-center md:text-2xl lg:text-2xl" : "" 
+            }`}>
             {title}
           </div>
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
-            {/* Tech stack list div */}
-            {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+          {/* Tech stack list div */}
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-2 w-fit absolute -right-4 lg:-right-1">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2 md:gap-2 lg:gap-3">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-3 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-80 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-3 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              <div className="flex flex-col gap-2 md:gap-2 lg:gap-3">
+                <span className="lg:py-3 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-80 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -172,8 +176,9 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />

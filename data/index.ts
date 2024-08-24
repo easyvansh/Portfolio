@@ -9,8 +9,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Always up for a good tech adventure!",
-    description:"I thrive on transforming bold ideas into sleek solutions and am always ready for the next coding adventure. ",
+    title: "Always up for the Next Coding Adventure!",
+    description:"On a quest to transform bold ideas into sleek solutions. Let’s craft something extraordinary together!",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -19,8 +19,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Timezone Flexibility? No Problem!",
+    description: "From Tokyo to Toronto, I’m always just a ping away.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -29,7 +29,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "My Tech Stack",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -39,8 +39,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "Code Connoisseur & Tech Enthusiast",
+    description: "Driven by a passion for innovation - e/acc.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -50,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Exploring New Tech Frontiers",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Got an idea? Let’s bring it to Life Together",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
