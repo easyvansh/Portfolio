@@ -8,32 +8,35 @@ import { FaLocationArrow } from "react-icons/fa6";
 const RecentProjects = () => {
   return (
     <section id="projects">
-      <div className="py-20">
+      <div className=" my-10 py-10">
         <h1 className="heading">
-          A small selection of{" "}
-          <span className="text-purple">recent projects</span>
+          A Glimpse into <span className="text-purple">My Recent Projects</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-x-40 gap-y-24 mt-10 ">
+        <div className="flex flex-wrap items-center justify-center p-6 gap-x-40 gap-y-24 mt-10 lg:max-w-full ">
           {projects.map((project, index) => (
             <div
               key={index}
               className="lg:min-h-[30rem] h-[28rem] flex items-center justify-center sm:w-96 w-auto"
             >
               <CardContainer className="inter-var">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1] sm:w-[32rem] h-auto rounded-xl p-10 border" >
-                  <CardItem as="h1" translateZ="50" className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                    
-                      {project.title}
-                   
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-inherit dark:border-white/[0.2] border-black/[0.1] sm:w-[32rem] h-auto rounded-xl p-10 border">
+                  <CardItem
+                    as="h1"
+                    translateZ="50"
+                    className="font-bold lg:text-3xl md:text-2xl text-base line-clamp-1"
+                  >
+                    {project.title}
                   </CardItem>
-                  <CardItem as="p" translateZ="60" className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                      style={{
-                        color: "#BEC1DD",
-                        margin: "1vh 0",
-                      }}>
-                   
-                      {project.des}
-                    
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                    style={{
+                      color: "#BEC1DD",
+                      margin: "1vh 0",
+                    }}
+                  >
+                    {project.des}
                   </CardItem>
                   <CardItem translateZ="80" className="w-full my-4">
                     <Image
@@ -57,7 +60,7 @@ const RecentProjects = () => {
                         {project.iconLists.map((icon, iconIndex) => (
                           <div
                             key={iconIndex}
-                            className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                            className="border border-white/[.2] rounded-full bg-black lg:w-11 lg:h-11 w-10 h-10 flex justify-center items-center"
                             style={{
                               transform: `translateX(-${5 * iconIndex + 2}px)`,
                             }}
