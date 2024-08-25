@@ -6,8 +6,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="py-40">
-      <div>
+    <div className="relative h-screen"> 
+      <div className="relative">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="silver"
@@ -23,31 +23,34 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-eerie_black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-col items-center justify-center">
+      <div className="flex justify-center relative top-72 z-10"> {/* Removed my-20 to prevent extra space */}
+        <div className="max-w-[89vw] md:max-w-2xl md:max-h-50 lg:max-w-[80vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-sm text-center text-silver-700 max-w-100 py-5">
-          Crafting Tools that Shape Tomorrow, Today
+            Crafting Tools that Shape Tomorrow, Today
           </p>
-          <a href= "#contact">
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl py-5"
-            words="One Commit At A Time, Simple"
+          <a href="#contact">
+            <TextGenerateEffect
+              className="text-center text-[40px] md:text-5xl lg:text-6xl py-5"
+              words="One Commit At A Time, Simple"
             />
-            </a>
+          </a>
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl py-4">
-          Heyo! I&apos;m Vansh! 
+            Heyo! I&apos;m Vansh!
           </p>
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl py-5">
-            An Undergraduate Student at <a href="https://www.ualberta.ca" className="text-purple hover:underline" target="_blank" rel="noopener noreferrer">
-            University of Alberta
-            </a>, always ready to turn challenges into adventures.
+            An Undergraduate Student at{" "}
+            <a
+              href="https://www.ualberta.ca"
+              className="text-purple hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              University of Alberta
+            </a>
+            , always ready to turn challenges into adventures.
           </p>
           <a href="#about">
-            <MagicButton
-              title="Explore My World"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <MagicButton title="Explore My World" icon={<FaLocationArrow />} position="right" />
           </a>
         </div>
       </div>
