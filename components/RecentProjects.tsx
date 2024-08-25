@@ -78,7 +78,7 @@ const RecentProjects = () => {
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
                       <div className="flex justify-center items-center">
-                        Check Live Site
+                        Check Out Project
                         <FaLocationArrow className="ms-3" color="#CBACc5" />
                       </div>
                     </CardItem>
