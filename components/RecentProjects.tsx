@@ -51,9 +51,7 @@ const RecentProjects = () => {
                   <div className="flex items-center justify-between mt-7 mb-3">
                     <CardItem
                       translateZ={20}
-                      as={Link}
-                      href={project.link}
-                      target="_blank"
+                     
                       className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                     >
                       <div className="flex items-center">
@@ -77,7 +75,9 @@ const RecentProjects = () => {
 
                     <CardItem
                       translateZ={20}
-                      as="button"
+                      as={Link}
+                      href={project.link}
+                      target="_blank"
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
                       <div className="flex justify-center items-center">

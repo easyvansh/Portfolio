@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-eerie_black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative top-72 z-10"> {/* Removed my-20 to prevent extra space */}
+      <div className="flex justify-center relative top-56 z-10"> {/* Removed my-20 to prevent extra space */}
         <div className="max-w-[89vw] md:max-w-2xl md:max-h-50 lg:max-w-[80vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-sm text-center text-silver-700 max-w-100 py-5">
             Crafting Tools that Shape Tomorrow, Today
