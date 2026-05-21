@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
@@ -5,58 +6,63 @@ import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full lg:mt-56 lg:pt-36 mt-20 pt-10 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+    <footer
+      className="relative w-full overflow-hidden pb-10 pt-20 lg:pt-32"
+      id="contact"
+    >
+      <div className="absolute -bottom-72 left-1/2 min-h-96 w-screen -translate-x-1/2">
+        <Image
           src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-50"
         />
       </div>
 
-      <div className="flex flex-col items-center">
-        <h3 className="heading lg:max-w-[45vw]">
-        <span className="text-purple">Simple</span>, Just Like Life Should Be
+      <div className="relative z-10 flex flex-col items-center">
+        <h3 className="heading max-w-3xl">
+         Good technology should feel invisible.
         </h3>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+        <p className="my-5 max-w-2xl text-center text-sm leading-7 text-white-200 md:mt-8 md:text-base">
+          I am always happy to talk about software projects, product ideas,
+          internships, full-stack systems, AI tooling, or clean interface work.
         </p>
-        <div className="relative flex flex-row  gap-x-10 my-10">
-
-        <a href="mailto:vansh2@ualberta.ca">
-          <MagicButton
-            title="Let's Link Up!"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-        <a href="/cv.pdf" download="Vansh's Resume"> 
-          <MagicButton
-            title="Check Out My Resume!"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <div className="relative my-8 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="mailto:vansh2@ualberta.ca">
+            <MagicButton
+              title="Start a Conversation"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+          <a href="/Master_Resume.pdf" download="Vansh-Singh-Resume-2026.pdf">
+            <MagicButton
+              title="View Resume"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Vansh Singh
+
+      <div className="relative z-10 mt-12 flex flex-col items-center justify-between gap-6 border-t border-white/[0.08] pt-8 md:flex-row">
+        <p className="text-sm font-light text-white-200 md:text-base md:font-normal">
+          Copyright &copy; 2026 Vansh Singh
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-4">
           {socialMedia.map((info) => (
-            <div
+            <a
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              href={info.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-lg border border-black-300 bg-black-200 bg-opacity-75 backdrop-blur-lg saturate-180 transition hover:-translate-y-0.5 hover:border-purple/60"
             >
-              <a href={info.link}>
-
-              <img src={info.img} alt="icons" width={20} height={20} />
-              </a>
-            </div>
+              <Image src={info.img} alt="social link" width={20} height={20} />
+            </a>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 export const navItems = [
-  { name: 'Home', link: '#home' },
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
+  { name: "Now", link: "#now" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
@@ -8,8 +9,9 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Always up for the Next Coding Adventure!",
-    description:"On a quest to transform bold ideas into sleek solutions. Let’s craft something extraordinary together!",
+    title: "Beyond the Resume",
+    description:
+      "I am interested in software that solves real workflow problems with clear architecture and thoughtful UX.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -18,8 +20,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Timezone Flexibility? No Problem!",
-    description: "From Tokyo to Toronto, I’m always just a ping away.",
+    title: "Built between Edmonton and everywhere else.",
+    description:
+      "I like remote collaboration, async notes, and turning scattered ideas into clean product decisions.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -28,8 +31,9 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My Tech Stack",
-    description: "I constantly try to improve",
+    title: "Tools I Think With",
+    description:
+      "Less hype stack, more thoughtful choices that help ideas become usable.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,19 +42,19 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Code Connoisseur & Tech Enthusiast",
-    description: "Driven by a passion for innovation - e/acc.",
+    title: "Frontend, backend, data, and interface design.",
+    description:
+      "I like building across the stack: clean UI, reliable APIs, useful data models, and practical product decisions.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Exploring New Tech Frontiers",
-    description: "The Inside Scoop",
+    title: "I like turning rough ideas into working product systems.",
+    description: "The build notes",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +63,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Got an idea? Let’s bring it to Life Together",
+    title: "Have a product idea? Let's build a clean version of it.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,84 +76,181 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "News Nexus ",
-    des: "A news aggregator website built with React, providing real-time updates and comprehensive coverage from a variety of sources.",
-    img: "/Logo/1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/mongodb-icon-1.svg", "/nodejs.svg"],
-    link: "https://github.com/easyvansh/News-Nexus",
+    title: "Thinking Studio",
+    des: "A local-first Chrome new-tab extension that turns every new tab into a personal reading studio. It pulls real RSS/Atom updates from curated intellectual sources, organizes them into shelves, and gives readers a fast place to search, save, and return to good ideas.",
+    img: "/Logo/Thinking Studio logo.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/re.svg"],
+    link: "https://thinking-dashboard-six.vercel.app",
+    signal: "Knowledge systems",
   },
   {
     id: 2,
-    title: "Film Wizard",
-    des: " A simple movie recommendation system web application developed using the TMDB Movies Dataset",
-    img: "/Logo/2.png",
-    iconLists: ["/py.svg", "/numpy.svg", "/pandas.svg", "/jupyter.png", "/imdb.svg"],
-    link: "https://github.com/easyvansh/Film-Wizard",
+    title: "ApplyIntel",
+    des: "A full-stack job application tracking and analytics dashboard that turns a scattered job search into a structured system. It simulates a lightweight ATS for individual job seekers with workflow management, pipeline insights, and follow-up tracking.",
+    img: "/Logo/Apply Intel Logo.png",
+    iconLists: [
+      "/next.svg",
+      "/ts.svg",
+      "/tail.svg",
+      "/mongodb-icon-1.svg",
+      "/nodejs.svg",
+    ],
+    link: "https://github.com/easyvansh/ApplyIntel",
+    signal: "Product analytics",
   },
   {
     id: 3,
-    title: "Weather App",
-    des: "A simple weather-app build using simple functionalities of React-Native.",
-    img: "/Logo/3.png",
-    iconLists: ["/react-native.svg", "/expo.svg", "/tail.svg", "/firebase.svg", "/react-native-firebase.svg"],
-    link: "https://github.com/easyvansh/Weather-App",
+    title: "Quick Wit",
+    des: "A speed reading application built around Rapid Serial Visual Presentation. Quick Wit helps people move through text documents and PDFs at an accelerated pace while staying focused on comprehension.",
+    img: "/Logo/quick_wit_icon.png",
+    iconLists: ["/re.svg", "/tail.svg", "/js.svg"],
+    link: "https://github.com/easyvansh/Quick-Wit",
+    signal: "Reading tools",
   },
   {
     id: 4,
-    title: "Shop Squad",
-    des: "A React Native Ecommerce App that runs on Android and iOS that allows the feature of group buy.",
-    img: "/Logo/4.png",
-    iconLists: ["/react-native.svg", "/expo.svg", "/tail.svg", "/firebase.svg", "/react-native-firebase.svg"],
-    link: "https://github.com/easyvansh/shop-squad/tree/main",
+    title: "News Nexus",
+    des: "A real-time news aggregation platform designed to reduce information overload and surface meaningful stories across multiple sources with clean retrieval and modular content systems.",
+    img: "/Logo/1.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+      "/mongodb-icon-1.svg",
+      "/nodejs.svg",
+    ],
+    link: "https://github.com/easyvansh/News-Nexus",
+    signal: "Information design",
   },
   {
     id: 5,
-    title: "To Do List",
-    des: "A Simple To-Do list application made with React.",
-    img: "/Logo/5.png",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/mongodb-icon-1.svg", "/nodejs.svg"],
-    link: "https://github.com/easyvansh/To-Do-List",
+    title: "Film Wizard",
+    des: "A movie recommendation engine built with Python data tooling to explore metadata, genre, and similarity-based discovery.",
+    img: "/Logo/2.png",
+    iconLists: ["/py.svg", "/numpy.svg", "/pandas.svg", "/jupyter.png", "/imdb.svg"],
+    link: "https://github.com/easyvansh/Film-Wizard",
+    signal: "Recommendation systems",
   },
   {
     id: 6,
-    title: "URL Shortner",
-    des: "A Simple and Efficient URL Shortening Service.",
-    img: "/Logo/6.png",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/mongodb-icon-1.svg", "/nodejs.svg"],
-    link: "https://github.com/easyvansh/URL-Shortner",
+    title: "Weather App",
+    des: "A minimalist weather application built in React Native with an emphasis on speed, clarity, and mobile-first interaction design.",
+    img: "/Logo/3.png",
+    iconLists: [
+      "/react-native.svg",
+      "/expo.svg",
+      "/tail.svg",
+      "/firebase.svg",
+      "/react-native-firebase.svg",
+    ],
+    link: "https://github.com/easyvansh/Weather-App",
+    signal: "Mobile UX",
   },
+  {
+    id: 7,
+    title: "Shop Squad",
+    des: "A collaborative ecommerce concept exploring group-buy dynamics inside a mobile shopping experience with cross-platform React Native architecture.",
+    img: "/Logo/4.png",
+    iconLists: [
+      "/react-native.svg",
+      "/expo.svg",
+      "/tail.svg",
+      "/firebase.svg",
+      "/react-native-firebase.svg",
+    ],
+    link: "https://github.com/easyvansh/shop-squad/tree/main",
+    signal: "Social commerce",
+  },
+  {
+    id: 8,
+    title: "To Do List",
+    des: "A lightweight productivity system designed around clarity instead of feature overload, built to explore state management and fast UI feedback loops in React.",
+    img: "/Logo/5.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+      "/mongodb-icon-1.svg",
+      "/nodejs.svg",
+    ],
+    link: "https://github.com/easyvansh/To-Do-List",
+    signal: "Productivity",
+  },
+  {
+    id: 9,
+    title: "URL Shortener",
+    des: "A clean URL shortening service focused on simplicity, fast redirects, and minimal interface friction.",
+    img: "/Logo/6.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+      "/mongodb-icon-1.svg",
+      "/nodejs.svg",
+    ],
+    link: "https://github.com/easyvansh/URL-Shortner",
+    signal: "Utility systems",
+  },
+];
+
+export const currentlyBuilding = [
+  {
+    title: "Thinking Studio",
+    label: "Curated reading workspace",
+    detail:
+      "A calmer knowledge interface for RSS, saved ideas, and personal reading rituals.",
+  },
+  {
+    title: "ApplyIntel",
+    label: "Job search operating system",
+    detail:
+      "A structured dashboard for applications, follow-ups, analytics, and pipeline clarity.",
+  },
+  {
+    title: "Liberate",
+    label: "Productivity tooling",
+    detail:
+      "Exploring software that helps people organize work and move faster.",
+  },
+  {
+    title: "Grey Matter",
+    label: "Developer experiments",
+    detail:
+      "Experiments around AI, data modeling, dashboards, and interface design.",
+  },
+];
+
+export const selectedInterests = [
+  "Human-computer interaction",
+  "AI-assisted knowledge systems",
+  "Full-stack development",
+  "Developer tooling",
+  "Product analytics",
+  "Data dashboards",
+  "Recommendation systems",
+  "Mobile-first interfaces",
+];
+
+export const currentObsessions = [
+  "how to make dashboards feel fast and focused",
+  "AI features that solve real user problems",
+  "systems that reduce repetitive work",
+  "clean component architecture in production apps",
+  "interfaces that make complex workflows easier to understand",
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Vansh was smooth, focused, and practical from day one. He brings curiosity, consistency, and care to the details that make products feel polished.",
+    name: "Project Collaborator",
+    title: "Software Team Member",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Vansh is quick to learn, clear in communication, and thoughtful about turning rough ideas into working software.",
+    name: "Peer Developer",
+    title: "Hackathon Teammate",
   },
 ];
 
@@ -180,7 +281,7 @@ export const companies = [
   },
   {
     id: 5,
-    name: "docker.",
+    name: "docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
@@ -189,29 +290,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Article ",
-    desc: "Decription",
+    title: "Frontend Engineering",
+    desc: "Building responsive React and Next.js interfaces with reusable components.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Article ",
-    desc: "Decription",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Mobile Development",
+    desc: "Creating React Native apps for Android and iOS with clean user flows.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Article ",
-    desc: "Decription",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Data & Recommendations",
+    desc: "Exploring Python, pandas, and recommendation systems for useful discovery tools.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Article ",
-    desc: "Decription",
+    title: "Full-stack Projects",
+    desc: "Connecting frontends, APIs, databases, and deployment workflows into complete apps.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -221,16 +322,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/easyvansh"
+    link: "https://github.com/easyvansh",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link:"https://x.com/easyvansh"
+    link: "https://x.com/easyvansh",
   },
   {
     id: 3,
     img: "/link.svg",
-    link:"linkedin.com/in/easyvansh/"
+    link: "https://www.linkedin.com/in/easyvansh/",
   },
 ];

@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Roboto_Flex({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Vansh's Porfolio",
-  description: "Modern and Minimal Portfolio",
+  title: "Vansh Singh | Portfolio",
+  description:
+    "A modern 2026 portfolio for Vansh Singh, showcasing projects, skills, and ways to connect.",
 };
 
 export default function RootLayout({
@@ -17,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -1,29 +1,23 @@
-import Approach from "@/components/Approach";
-import Blog from "@/components/Blog";
-import Clients from "@/components/Clients";
-
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
+import Signal from "@/components/Signal";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="relative bg-eerie_black-100 flex  items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 py-20">
-      <div className="max-w-7xl w-full">
+    <main
+      id="home"
+      className="relative mx-auto flex min-h-screen flex-col items-center overflow-hidden bg-eerie_black-100 px-4 text-white sm:px-6 lg:px-10"
+    >
+      <div className="w-full max-w-7xl">
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <Signal />
         <RecentProjects />
-        {/* 
-        <Clients/>
-        <Approach/>
-        <Blog />
-        */}
         <Footer />
       </div>
     </main>
