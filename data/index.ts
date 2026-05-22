@@ -2,6 +2,7 @@ export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Now", link: "#now" },
+  { name: "Blog", link: "https://thefifthwall.vercel.app/" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];

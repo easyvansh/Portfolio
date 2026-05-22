@@ -44,6 +44,17 @@ const Footer = () => {
               position="right"
             />
           </a>
+          <a
+            href="https://thefifthwall.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MagicButton
+              title="Read the Blog"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
 

@@ -1,0 +1,82 @@
+<svg
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    :root {
+      --logo-color: #111111;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --logo-color: #f5f1e8;
+      }
+    }
+
+    .outer-ring {
+      stroke-dasharray: 220;
+      stroke-dashoffset: 220;
+      animation: drawRing 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .v-mark {
+      stroke-dasharray: 120;
+      stroke-dashoffset: 120;
+      animation: drawV 1.4s ease forwards 0.5s;
+    }
+
+    .signal {
+      opacity: 0;
+      transform-origin: center;
+      animation: pulseSignal 3s ease-in-out infinite 1.6s;
+    }
+
+    @keyframes drawRing {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes drawV {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes pulseSignal {
+      0%,
+      100% {
+        opacity: 0.15;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.08);
+      }
+    }
+  </style>
+
+  <circle
+    cx="32"
+    cy="32"
+    r="24"
+    stroke="var(--logo-color)"
+    stroke-width="1.5"
+    class="outer-ring"
+  />
+
+  <path
+    d="M20 20L32 44L44 20"
+    stroke="var(--logo-color)"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="v-mark"
+  />
+
+  <circle cx="32" cy="32" r="4" fill="var(--logo-color)" class="signal" />
+</svg>

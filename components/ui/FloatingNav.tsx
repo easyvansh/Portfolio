@@ -61,18 +61,24 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem, idx) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative flex items-center rounded-lg px-2 py-1 text-xs text-neutral-200 transition-colors hover:bg-white/[0.08] hover:text-white sm:text-sm"
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="!cursor-pointer">{navItem.name}</span>
-          </Link>
-        ))}
+        {navItems.map((navItem, idx) => {
+          const isExternal = navItem.link.startsWith("http");
+
+          return (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              className={cn(
+                "relative flex items-center rounded-lg px-2 py-1 text-xs text-neutral-200 transition-colors hover:bg-white/[0.08] hover:text-white sm:text-sm"
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              <span className="!cursor-pointer">{navItem.name}</span>
+            </Link>
+          );
+        })}
       </motion.div>
     </AnimatePresence>
   );
