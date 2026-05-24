@@ -86,6 +86,21 @@ export const projects = [
   },
   {
     id: 2,
+    title: "CelluloidFM",
+    des: "A cinematic SomaFM radio player built around station discovery, mood-based browsing, favorites, now-playing track context, and an ambient audio visualizer.",
+    img: "/Logo/Celluloid fm.png",
+    iconLists: [
+      "/vue.svg",
+      "/js.svg",
+      "/three.svg",
+      "/axios.svg",
+      "/vercel.svg",
+    ],
+    link: "https://celluloidfm.vercel.app/",
+    signal: "Cinematic audio",
+  },
+  {
+    id: 3,
     title: "ApplyIntel",
     des: "A full-stack job application tracking and analytics dashboard that turns a scattered job search into a structured system. It simulates a lightweight ATS for individual job seekers with workflow management, pipeline insights, and follow-up tracking.",
     img: "/Logo/Apply Intel Logo.png",
@@ -100,7 +115,7 @@ export const projects = [
     signal: "Product analytics",
   },
   {
-    id: 3,
+    id: 4,
     title: "Quick Wit",
     des: "A speed reading application built around Rapid Serial Visual Presentation. Quick Wit helps people move through text documents and PDFs at an accelerated pace while staying focused on comprehension.",
     img: "/Logo/quick_wit_icon.png",
@@ -109,7 +124,7 @@ export const projects = [
     signal: "Reading tools",
   },
   {
-    id: 4,
+    id: 5,
     title: "News Nexus",
     des: "A real-time news aggregation platform designed to reduce information overload and surface meaningful stories across multiple sources with clean retrieval and modular content systems.",
     img: "/Logo/1.png",
@@ -124,7 +139,7 @@ export const projects = [
     signal: "Information design",
   },
   {
-    id: 5,
+    id: 6,
     title: "Film Wizard",
     des: "A movie recommendation engine built with Python data tooling to explore metadata, genre, and similarity-based discovery.",
     img: "/Logo/2.png",
@@ -133,7 +148,7 @@ export const projects = [
     signal: "Recommendation systems",
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather App",
     des: "A minimalist weather application built in React Native with an emphasis on speed, clarity, and mobile-first interaction design.",
     img: "/Logo/3.png",
@@ -148,7 +163,7 @@ export const projects = [
     signal: "Mobile UX",
   },
   {
-    id: 7,
+    id: 8,
     title: "Shop Squad",
     des: "A collaborative ecommerce concept exploring group-buy dynamics inside a mobile shopping experience with cross-platform React Native architecture.",
     img: "/Logo/4.png",
@@ -163,7 +178,7 @@ export const projects = [
     signal: "Social commerce",
   },
   {
-    id: 8,
+    id: 9,
     title: "To Do List",
     des: "A lightweight productivity system designed around clarity instead of feature overload, built to explore state management and fast UI feedback loops in React.",
     img: "/Logo/5.png",
@@ -178,7 +193,7 @@ export const projects = [
     signal: "Productivity",
   },
   {
-    id: 9,
+    id: 10,
     title: "URL Shortener",
     des: "A clean URL shortening service focused on simplicity, fast redirects, and minimal interface friction.",
     img: "/Logo/6.png",
@@ -200,6 +215,12 @@ export const currentlyBuilding = [
     label: "Curated reading workspace",
     detail:
       "A calmer knowledge interface for RSS, saved ideas, and personal reading rituals.",
+  },
+  {
+    title: "CelluloidFM",
+    label: "Cinematic audio interface",
+    detail:
+      "A SomaFM player shaped around station discovery, mood browsing, favorites, and immersive listening.",
   },
   {
     title: "ApplyIntel",
