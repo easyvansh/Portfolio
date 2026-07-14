@@ -34,7 +34,7 @@ const Hero = () => {
             />
           </a>
           <p className="max-w-3xl py-3 text-sm leading-7 text-white-200 sm:text-base lg:text-xl">
-            I&apos;m Vansh, a Computer Science student at{" "}
+            I&apos;m Vansh, a software engineer from the {" "}
             <a
               href="https://www.ualberta.ca"
               className="text-purple hover:underline"
@@ -43,7 +43,7 @@ const Hero = () => {
             >
               University of Alberta
             </a>
-            , a developer and film student building products shaped by psychology, aesthetics, and curiosity.
+             , with a background in Computer Science and Film Studies, I'm interested in creating software that helps explore ideas with less friction.
           </p>
           <div className="mt-6 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
             <a href="#projects">

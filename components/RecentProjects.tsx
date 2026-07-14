@@ -8,7 +8,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 const RecentProjects = () => {
   return (
     <section id="projects" className="scroll-mt-28">
-      <div className="py-12 md:py-20">
+      <div className="py-14 md:py-20">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.35em] text-purple">
             Selected Work
@@ -23,17 +23,17 @@ const RecentProjects = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:gap-8 xl:grid-cols-3 xl:gap-9">
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="flex min-h-[30rem] items-center justify-center"
+              className="flex min-h-[28rem] items-stretch justify-center"
             >
               <CardContainer className="inter-var w-full">
-                <CardBody className="group/card relative h-full w-full overflow-hidden rounded-2xl border border-white/[0.12] bg-eerie_black-200 p-5 transition before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top_left,rgba(203,172,249,0.14),transparent_32%)] before:opacity-0 before:transition before:duration-300 hover:border-purple/50 hover:before:opacity-100 dark:border-white/[0.16] dark:hover:shadow-2xl dark:hover:shadow-purple/[0.12] sm:p-6">
+                <CardBody className="group/card relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/[0.12] bg-eerie_black-200 p-5 transition before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top_left,rgba(203,172,249,0.14),transparent_32%)] before:opacity-0 before:transition before:duration-300 hover:border-purple/50 hover:before:opacity-100 dark:border-white/[0.16] dark:hover:shadow-2xl dark:hover:shadow-purple/[0.12] sm:p-6">
                   <CardItem
                     translateZ="35"
-                    className="mb-4 flex w-full items-center justify-between gap-3"
+                    className="mb-3 flex w-full items-center justify-between gap-3"
                   >
                     <span className="rounded-full border border-white/[0.12] bg-white/[0.04] px-3 py-1 text-xs uppercase tracking-[0.2em] text-white-200">
                       {project.signal}
@@ -45,50 +45,50 @@ const RecentProjects = () => {
                   <CardItem
                     as="h1"
                     translateZ="50"
-                    className="line-clamp-1 text-2xl font-bold"
+                    className="line-clamp-1 text-xl font-semibold sm:text-2xl"
                   >
                     {project.title}
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="line-clamp-4 min-h-24 text-sm font-light leading-6 lg:text-base"
+                    className="mt-3 line-clamp-3 min-h-[4.5rem] text-sm font-light leading-6 lg:text-[15px]"
                     style={{
                       color: "#BEC1DD",
-                      margin: "1vh 0",
                     }}
                   >
                     {project.des}
                   </CardItem>
-                  <CardItem translateZ="80" className="my-5 w-full">
+                  <CardItem translateZ="80" className="mt-5 w-full">
                     <Image
                       src={project.img}
                       height={1000}
                       width={1000}
-                      className="h-56 w-full rounded-xl border border-white/[0.08] object-cover group-hover/card:shadow-xl"
+                      className="h-48 w-full rounded-xl border border-white/[0.08] object-cover group-hover/card:shadow-xl sm:h-52"
                       alt={project.title}
                       priority={index < 3}
                     />
                   </CardItem>
-                  <div className="mt-7 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items-center sm:justify-between">
                     <CardItem
                       translateZ={20}
                       className="rounded-xl text-xs font-normal dark:text-white"
                     >
-                      <div className="flex items-center">
+                      <div className="flex items-center pl-2">
                         {project.iconLists.map((icon, iconIndex) => (
                           <div
                             key={iconIndex}
-                            className="border border-white/[.2] rounded-full bg-black lg:w-11 lg:h-11 w-10 h-10 flex justify-center items-center"
+                            className="flex h-9 w-9 items-center justify-center rounded-full border border-white/[.2] bg-black lg:h-10 lg:w-10"
                             style={{
-                              transform: `translateX(-${5 * iconIndex + 2}px)`,
+                              transform: `translateX(-${4 * iconIndex + 2}px)`,
                             }}
                           >
                             <Image
                               src={icon}
                               alt={`icon-${iconIndex}`}
-                              width={44}
-                              height={44}
+                              width={40}
+                              height={40}
+                              unoptimized
                               className="p-2"
                             />
                           </div>
@@ -102,7 +102,7 @@ const RecentProjects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-xl bg-white px-4 py-3 text-xs font-bold text-black transition hover:bg-purple"
+                      className="rounded-xl bg-white px-4 py-2.5 text-xs font-bold text-black transition hover:bg-purple"
                     >
                       <div className="flex justify-center items-center">
                         Open Project

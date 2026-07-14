@@ -10,17 +10,18 @@ const Signal = () => {
       <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="rounded-2xl border border-white/[0.12] bg-white/[0.03] p-6 backdrop-blur md:p-8">
           <p className="text-xs font-medium uppercase tracking-[0.35em] text-purple">
-            What Interests Me
-          </p>
-          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-            I like software that turns messy systems into clear tools.
-          </h2>
-          <p className="mt-6 text-sm leading-7 text-white-200 md:text-base">
-            I am drawn toward products that organize information, reduce
-            repetitive work, and help people move through complicated
-            workflows with less friction. Lately that means dashboards,
-            knowledge tools, analytics systems, and polished web apps.
-          </p>
+  What Interests Me
+</p>
+
+<h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+  I build software that makes complex information easier to use.
+</h2>
+
+<p className="mt-6 text-sm leading-7 text-white-200 md:text-base">
+  I enjoy designing systems that organize knowledge, automate repetitive work,
+  and simplify decision making. Most of what I build lives at the intersection
+  of software engineering, data, and thoughtful interface design.
+</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {selectedInterests.map((interest) => (
