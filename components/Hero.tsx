@@ -43,7 +43,7 @@ const Hero = () => {
             >
               University of Alberta
             </a>
-             , with a background in Computer Science and Film Studies, I'm interested in creating software that helps explore ideas with less friction.
+             , with a background in Computer Science and Film Studies, I&apos;m interested in creating software that helps explore ideas with less friction.
           </p>
           <div className="mt-6 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
             <a href="#projects">
